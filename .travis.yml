@@ -1,1 +1,14 @@
-npm install -g newman
+language: node_js
+node_js:
+- "14.17.3"
+
+install:
+- npm install newman
+
+before_script:
+- node --version
+- npm --version
+- node_modules/.bin/newman --version
+
+script:
+- node_modules/.bin/newman run JSON.postman_collection.json
