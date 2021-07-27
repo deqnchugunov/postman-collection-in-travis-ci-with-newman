@@ -1,0 +1,1 @@
+# postman-collection-in-travis-ci-with-newman
